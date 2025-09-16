@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { div } from "framer-motion/client";
 import About from "./About";
+import Service from "../Service";
 
 const Hero = () => {
     // Word by word animation
@@ -120,6 +121,7 @@ const Hero = () => {
             </div>
         </section>
         <About></About>
+        <Service></Service>
   </div>
     );
 };

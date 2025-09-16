@@ -6,41 +6,42 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 import Root from './component/Root';
 import Hero from './component/Hero';
-import { div, path } from 'framer-motion/client';
 import About from './component/About';
 import Service from './Service';
+import Education from './component/Education';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Root></Root> ,
-    children:[
+    element: <Root></Root>,
+    children: [
       {
-        path:"/",
-        element:<Hero></Hero>
+        path: "/",
+        element: <Hero></Hero>
       },
       {
-        path:"/about",
-        element:<About></About>
+        path: "/about",
+        element: <About></About>
       },
-      
- {
-        path:"/service",
-        element:<Service></Service>
+      {
+        path: "/service",
+        element: <Service></Service>
       },
-      
-
+      {
+        path: "/education",
+        element: <Education></Education>
+      },
     ]
   },
 ]);
 
-
 createRoot(document.getElementById('root')).render(
-<div className='bg-blue-900'>
-    <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
-</div>
+  <StrictMode>
+    <div className="bg-blue-900 min-h-screen">
+      <RouterProvider router={router} />
+    </div>
+  </StrictMode>
 )
