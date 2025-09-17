@@ -79,8 +79,8 @@ const Navber = () => {
 
       {/* Right: Hire Me button */}
       <div className="navbar-end">
-        <Link to="/hire">
-          <button className="btn bg-white text-blue-800 rounded-xl px-5 font-semibold 
+        <Link to="/">
+          <button className="btn bg-white text-blue-800 rounded-xl px-5 font-bold 
                              hover:bg-fuchsia-500 hover:text-white 
                              transition duration-300 shadow">
             Hire Me!
